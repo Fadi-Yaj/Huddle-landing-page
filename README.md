@@ -60,10 +60,12 @@ To run this project locally:
 
 - Writing clean, semantic HTML and accessible code
 
-## 👤 Author
+## 👤 Programmer And Designer 
 
 - **Fadi Yajouri**
 
 GitHub: https://github.com/Fadi-Yaj
 
 Frontend Mentor: https://www.frontendmentor.io/profile/Fadi-Yaj
+
+- **Frontend Mentor**
