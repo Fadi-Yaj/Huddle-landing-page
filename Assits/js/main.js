@@ -1,30 +1,23 @@
-// ===== زر الترس والقائمة =====
+// ===== Gear and menu button =====
 const toggleBtn = document.getElementById("infoToggleBtn");
 const infoCard = document.getElementById("infoCard");
 
-// عند النقر على الزر
+// When you click the button
 toggleBtn.addEventListener("click", function (e) {
-  e.stopPropagation(); // لمنع انتشار الحدث للخارج
-  // تبديل الكلاس show
+  e.stopPropagation(); // To prevent the incident from spreading outwards.
+  // Toggle the 'show' class
   infoCard.classList.toggle("show");
 });
 
-// إغلاق القائمة عند النقر خارجها (اختياري ولكن مفيد)
+// Close the menu when clicking outside it (optional but useful)
 document.addEventListener("click", function (e) {
-  // إذا كانت القائمة ظاهرة والنقرة خارج الزر والقائمة
+  // If the menu is visible and the click is outside the button and the menu
   if (
     infoCard.classList.contains("show") &&
     !infoCard.contains(e.target) &&
     e.target !== toggleBtn &&
     !toggleBtn.contains(e.target)
   ) {
-    infoCard.classList.remove("show");
-  }
-});
-
-// إغلاق القائمة بالضغط على زر Escape
-document.addEventListener("keydown", function (e) {
-  if (e.key === "Escape" && infoCard.classList.contains("show")) {
     infoCard.classList.remove("show");
   }
 });

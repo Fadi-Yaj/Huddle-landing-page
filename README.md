@@ -1,71 +1,108 @@
-# 🌟 Huddle Landing Page
+# 🏷️ Huddle Landing Page
 
-[![Live Demo]()](https://Fadi-Yaj.github.io/huddle-landing-page/)
-[![Frontend Mentor]()]()
+![Screenshot of the ](./preview.jpg)
+🔗 **Watch the project live :** [Live Demo]( https://fadi-yaj.github.io/Huddle-landing-page/)
 
 ---
 
-## 📖 About The Project
+## 📖 Overview
 
-> A modern, fully responsive landing page designed to showcase the Huddle brand. This project was built as a solution to the [Frontend Mentor challenge](https://www.frontendmentor.io?ref=challenge), focusing on clean design, accessibility, and a seamless user experience across all devices.
+This is my solution for the **Huddle Landing Page** challenge from [Frontend Mentor](https://www.frontendmentor.io/challenges).  
+The goal was to build a clean, responsive landing page using **HTML**, **CSS**, and a touch of **JavaScript** for interactive elements.
 
-**Key Features:**
-
-- ✅ Fully responsive layout (Mobile-first)
-- ✅ Interactive info button with smooth toggle
-- ✅ Social media links with hover effects
-- ✅ Clean and maintainable CSS with custom properties
-- ✅ Accessible and semantic HTML
-
+The project focuses on creating an elegant, single-page layout with a modern design, beautiful typography, and a fully responsive structure that works seamlessly across all devices
 ---
 
 ## 🎨 Design Preview
 
-| Mobile                                       | Desktop                                        |
-| -------------------------------------------- | ---------------------------------------------- |
-| ![Mobile Design](./design/mobile-design.jpg) | ![Desktop Design](./design/desktop-design.jpg) |
-
-> _Note: Add screenshots to your `Assits/img/` folder for better presentation._
+| Mobile                                       | Desktop                                        | Active States                                  |
+| -------------------------------------------- | ---------------------------------------------- | ---------------------------------------------- |
+| ![Mobile Design](./design/mobile-design.jpg) | ![Desktop Design](./design/desktop-design.jpg) | ![Active States](./design/active-states.jpg)   |
 
 ---
 
 ## 🛠️ Built With
 
-- **HTML5** - Semantic markup
-- **CSS3** - Custom properties, Flexbox, and responsive design
-- **JavaScript** - DOM manipulation for interactive UI
-- **Font Awesome** - Icons for social links and UI elements
-- **Google Fonts** - Poppins & Open Sans
+- **HTML5** (Semantic markup)
+- **CSS3** (Flexbox, CSS Variables, Media Queries)
+- **JavaScript (ES6)** (DOM manipulation for the info toggle button)
+- **Font Awesome** (for icons)
+- **Google Fonts** (Poppins & Open Sans)
 
 ---
 
-## 🚀 Getting Started
+## ✨ Features
+
+- **Clean Landing Page Layout**: Logo, hero image, title, description, CTA button, and social links.
+- **Fully Responsive**: Optimized for mobile, tablet, and desktop using a mobile-first approach.
+- **CSS Variables (`:root`)**: Consistent theming for colors, fonts, spacing, and breakpoints.
+- **Interactive Info Button**: Click the gear icon to reveal designer and coder credits (built with JavaScript).
+- **Elegant Typography**: Using Google Fonts (Poppins for headings, Open Sans for body text).
+- **Smooth Hover Effects**: Interactive states for buttons, social icons, and the info button.
+
+---
+
+## 📱 Responsive Design
+
+- Built with a **mobile-first** workflow.
+- Breakpoints:
+  - **Mobile:** Default (up to `375px`)
+  - **Tablet:** `768px - 1023px`
+  - **Desktop:** `1024px` and above
+
+---
+
+## 🚀 Installation
 
 To run this project locally:
 
-1. **Clone the repository**
+1. Clone the repository:
+
    ```bash
-   git clone https://github.com/your-username/huddle-landing-page.git
+   git clone https://github.com/Fadi-Yaj/Huddle-landing-page.git
    ```
 
-## 🎯 What I Learned
+2. Navigate to the project folder
 
-- Building a mobile-first responsive layout
+3. Open `index.html` directly in your browser (no server required).
 
-- Using CSS custom properties for theming
+---
 
-- Creating interactive UI components with vanilla JavaScript
+## 💡 What I Practiced / Learned
 
-- Applying design tokens and maintaining a consistent design system
+- Structuring CSS with reusable variables for colors, fonts, and breakpoints.
+- Building a fully responsive layout using CSS Flexbox and media queries.
+- Implementing a mobile-first workflow to ensure a smooth experience on all devices.
+- Adding interactivity with vanilla JavaScript (toggle button for info card).
+- Using CSS pseudo-elements (::before / ::after) for decorative purposes
+- Managing accessibility (keyboard support: Escape key to close the info card)
 
-- Writing clean, semantic HTML and accessible code
+---
 
-## 👤 Programmer And Designer 
+## 🔮 Possible Future Improvements
 
-- **Fadi Yajouri**
+- Add smooth animations for the info card toggle.
+- Implement a Dark Mode toggle using CSS variables.
+- Add form validation for the "Register" button.
+- Improve accessibility with ARIA attributes.
 
-GitHub: https://github.com/Fadi-Yaj
+---
 
-Frontend Mentor: https://www.frontendmentor.io/profile/Fadi-Yaj
+# 👨‍💻 Developer
 
-- **Frontend Mentor**
+Created by: **Mohammed Fadi Yajouri**
+
+---
+
+## 📬 For contact or inquiries, you can reach me via
+
+- 📧**e-mail :** [fadiyaj99@gmail.com](mailto:fadiyaj99@gmail.com)
+- 💼**LinkedIn :** [Mohammed Fadi Yajouri](https://www.linkedin.com/in/mohammed-yajouri-2156b0338/)
+- 💬**WhatsApp :** [Contact me via WhatsApp](https://wa.me/963994742620)
+
+---
+
+## 🙏 Acknowledgments
+
+- Challenge provided by [frontendmentor.io](https://www.frontendmentor.io/challenges)
+- Design inspiration from the Huddle landing page challenge

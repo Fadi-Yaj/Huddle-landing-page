@@ -1,6 +1,6 @@
-/* ============================================
-   :ROOT - المتغيرات
-   ============================================ */
+/*=====================*/
+/* Variables */
+/*====================*/
 :root {
   /* Colors */
   --bg-color: #674baf;
@@ -28,9 +28,9 @@
   --desktop: 1440px;
 }
 
-/* ============================================
-   RESET & GLOBAL
-   ============================================ */
+/*================*/
+/* RESET & GLOBAL */
+/*================*/
 *,
 *::before,
 *::after {
@@ -40,7 +40,8 @@
 }
 
 html {
-  font-size: 62.5%; /* = 10px for easier rem calculation */
+  font-size: 62.5%;
+  /* = 10px for easier rem calculation */
 }
 
 body {
@@ -70,9 +71,10 @@ img {
   height: auto;
 }
 
-/* ============================================
-   CONTAINER
-   ============================================ */
+/*===========*/
+/* CONTAINER */
+/*===========*/
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -82,9 +84,9 @@ img {
   flex-direction: column;
 }
 
-/* ============================================
-   HEADER
-   ============================================ */
+/*========*/
+/* HEADER */
+/*========*/
 header {
   display: flex;
   justify-content: space-between;
@@ -99,9 +101,9 @@ header {
   height: auto;
 }
 
-/* ============================================
-   ATTRIBUTION (GEAR + INFO CARD)
-   ============================================ */
+/*================================*/
+/* ATTRIBUTION (GEAR + INFO CARD) */
+/*================================*/
 .attribution {
   position: relative;
 }
@@ -123,11 +125,14 @@ header {
   height: 40px;
   z-index: 2;
 }
+
 .info-btn:hover {
   background: rgba(255, 255, 255, 0.25);
 }
 
+/*==================*/
 /* Information Card */
+/*==================*/
 .info-card {
   position: absolute;
   top: calc(100% + 8px);
@@ -137,13 +142,15 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: var(--radius-sm);
   padding: 13px 18px;
-  display: none; /* hidden by default */
+  display: none;
+  /* hidden by default */
   flex-direction: column;
   gap: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   min-width: 200px;
   z-index: 10;
 }
+
 .info-card.show {
   display: flex;
 }
@@ -155,6 +162,7 @@ header {
   font-size: 1.2rem;
   color: var(--primary);
 }
+
 .info-card .line .badge {
   border: 2px solid var(--primary);
   padding: 4px 10px;
@@ -162,17 +170,17 @@ header {
   font-weight: bold;
   background: rgba(0, 0, 0, 0.2);
 }
+
 .info-card .line a {
   font-style: italic;
   color: var(--text-color);
 }
+
 .info-card .line a:hover {
   text-decoration: underline;
 }
 
-/* ============================================
-   ARTICLE (MAIN CONTENT)
-   ============================================ */
+/* ARTICLE (MAIN CONTENT) */
 main {
   display: flex;
   flex-direction: column;
@@ -228,6 +236,7 @@ main img {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
+
 .content-side button:hover {
   background-color: var(--btn-hover-bg);
   color: var(--btn-hover-color);
@@ -235,9 +244,8 @@ main img {
   box-shadow: 0 8px 20px rgba(232, 130, 232, 0.4);
 }
 
-/* ============================================
-   SOCIAL LINKS (FOOTER)
-   ============================================ */
+/*========================*/
+/* SOCIAL LINKS (FOOTER) */
 .social-links {
   display: flex;
   justify-content: center;
@@ -258,15 +266,16 @@ main img {
   color: var(--text-color);
   transition: all 0.3s;
 }
+
 .social-links a:hover {
   border-color: var(--primary);
   color: var(--primary);
   transform: translateY(-3px);
 }
 
-/* ============================================
-   RESPONSIVE: DESKTOP (≥ 1024px)
-   ============================================ */
+/*==============================*/
+/* RESPONSIVE: DESKTOP (1024px) */
+/*==============================*/
 @media (min-width: 1024px) {
   body {
     background-image: url("../img/bg-desktop.svg");
@@ -328,40 +337,46 @@ main img {
   }
 }
 
-/* ============================================
-   RESPONSIVE: TABLET 
-   ============================================ */
+/*=====================*/
+/* RESPONSIVE: TABLET  */
+/*=====================*/
 @media (min-width: 768px) and (max-width: 1023px) {
   article {
     flex-direction: row;
     gap: 3rem;
   }
+
   article img {
     max-width: 40%;
   }
+
   .content-side {
     max-width: 55%;
     text-align: left;
     align-items: flex-start;
   }
+
   .content-side .heading {
     font-size: 2.8rem;
   }
 }
 
-/* ============================================
-   RESPONSIVE: SMALL MOBILE (< 375px)
-   ============================================ */
+/*==================================*/
+/* RESPONSIVE: SMALL MOBILE (375px) */
+/*==================================*/
 @media (max-width: 375px) {
   .logo {
     width: 12rem;
   }
+
   .content-side .heading {
     font-size: 1.8rem;
   }
+
   .content-side p {
     font-size: 1.3rem;
   }
+
   .content-side button {
     padding: 1rem 4rem;
     font-size: 1.3rem;
